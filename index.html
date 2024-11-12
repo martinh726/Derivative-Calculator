@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Derivative Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+  </head>
+  <body>
+    <h1>Derivative Calculator</h1>
+    <div class="input-container">
+      <label for="function">Enter a function:</label>
+      <input type="text" id="function" placeholder="e.g., x^2 + sin(x)" />
+
+      <label for="variable">Enter the variable:</label>
+      <input type="text" id="variable" placeholder="e.g., x" />
+
+      <button onclick="calculateDerivative()">Calculate Derivative</button>
+    </div>
+
+    <h2>Result:</h2>
+    <pre id="result"></pre>
+
+    <h2>Steps:</h2>
+    <pre id="steps"></pre>
+
+    <script src="script.js"></script>
+  </body>
+</html>
